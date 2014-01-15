@@ -99,7 +99,7 @@ static void recordRecent( const char *file, double temp, double hum, double avgW
     fprintf(f,"\t\"gustSpeed\":%.1f,\n", gustWind);
     fprintf(f,"\t\"rain\":%.1f,\n", rain);
     fprintf(f,"\t\"batteryLow\":%d,\n", batteryLowBits);
-    fprintf(f,"\t\"windDirection\":%d\n", windDirectionBits*45);
+    fprintf(f,"\t\"windDirection\":%.1f\n", windDirectionBits*22.5);
     fprintf(f,"}\n");
     fclose(f);
 
